@@ -1,6 +1,7 @@
 {
   "name": "Universal - Latest",
   "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": true,
@@ -14,6 +15,5 @@
         "ms-python.debugpy"
       ]
     }
-  },
-  "postCreateCommand": "bash .devcontainer/postCreate.sh"
+  }
 }
